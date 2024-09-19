@@ -249,10 +249,11 @@ button:hover {
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 .finalize-product p{
-    margin-right: 30px;
     font-weight: bold;
 }
 
