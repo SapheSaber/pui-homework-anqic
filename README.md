@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `https://SapheSaber.github.io/pui-homework-anqic/solution-hw1/`
+Deployed website: `https://SapheSaber.github.io/pui-homework-anqic/`
 
 Repository link: `https://github.com/SapheSaber/pui-homework-anqic`
