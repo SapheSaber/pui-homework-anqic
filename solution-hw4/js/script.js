@@ -27,6 +27,7 @@ headerElement.textContent = `${rollType} Cinnamon Roll`;
 // update the roll image
 const imageElement = document.querySelector("#roll-image");
 const rollTypeLower = rollType.toLowerCase();
+console.log(rollTypeLower);
 imageElement.src = `../assets/products/${rollTypeLower}` + "-cinnamon-roll.jpg";
 
 // update base price
