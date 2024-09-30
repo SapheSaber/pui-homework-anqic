@@ -27,7 +27,6 @@ headerElement.textContent = `${rollType} Cinnamon Roll`;
 // update the roll image
 const imageElement = document.querySelector("#roll-image");
 const rollTypeLower = rollType.toLowerCase();
-console.log(rollTypeLower);
 imageElement.src = `../assets/products/${rollTypeLower}` + "-cinnamon-roll.jpg";
 
 // update base price
@@ -74,7 +73,8 @@ function addToCart(){
     const packSize = packSelect.value;
 
     const newRoll = new Roll(rollType, rollGlazing, packSize, rollData.basePrice)
-    console.log(newRoll)
+    cart.push(newRoll)
+    console.log(cart)
 }
 
 document.getElementById("add-button").addEventListener("click", addToCart);
