@@ -41,17 +41,23 @@ const cart = [];
 function addToCart(type, glazing, size, basePrice) {
     const roll = new Roll(type, glazing, size, basePrice);
     cart.push(roll);
+    console.log("New roll added: ", roll);
     saveToLocalStorage();
     updateCartTotal();
 }
 
-// Adding some default rolls to the cart on load
-function initializeCart() {
-    if (!localStorage.getItem("storedCart")) {
+// Defualt 4 items added to the cart
+function initializeCart(){
+    const storedCart = localStorage.getItem('storedCart');
+    // if the cart is empty then retore the 4 default items
+    if (JSON.parse(storedCart).length === 0 || !storedCart){
         addToCart("Original", "Sugar milk", "1", rolls["Original"].basePrice);
         addToCart("Walnut", "Vanilla milk", "12", rolls["Walnut"].basePrice);
         addToCart("Raisin", "Sugar milk", "3", rolls["Raisin"].basePrice);
         addToCart("Apple", "Keep original", "3", rolls["Apple"].basePrice);
+        saveToLocalStorage();
+    } else{
+        retrieveFromLocalStorage();
     }
 }
 
@@ -62,9 +68,9 @@ function createElement(roll) {
     if (!template) return; // Exit if template is not found (on another page)
 
     const clone = template.content.cloneNode(true);
-      roll.element = clone.querySelector(".cart-item");
+    roll.element = clone.querySelector(".cart-item");
   
-    // Add remove button functionality
+    // Add remove button function
     const btnDelete = roll.element.querySelector(".remove");
     btnDelete.addEventListener("click", () => {
       deleteRoll(roll);
@@ -85,7 +91,7 @@ function updateElement(roll) {
     const sizeElement = roll.element.querySelector(".pack-size-info");
     const priceElement = roll.element.querySelector(".price-tag");
   
-    // Set the element content
+    // update the element content
     rollImageElement.src = `../assets/products/${roll.type.toLowerCase().replace(" ", "-")}-cinnamon-roll.jpg`;
     rollImageElement.alt = `${roll.type} Cinnamon Roll`;
     rollNameElement.textContent = `${roll.type} Cinnamon Roll`;
@@ -96,6 +102,7 @@ function updateElement(roll) {
 
 function updateCartTotal() {
     const totalPrice = cart.reduce((sum, roll) => sum + parseFloat(roll.price), 0).toFixed(2);
+    console.log("Total Price: ", totalPrice);
     const totalPriceElement = document.getElementById("cart-total-price");
     if (totalPriceElement) {
         totalPriceElement.textContent = `$${totalPrice}`; 
@@ -119,6 +126,7 @@ function deleteRoll(roll) {
 
 function saveToLocalStorage() {
     const cartArray = Array.from(cart);
+    console.log(cartArray);
     const cartArrayString = JSON.stringify(cartArray);
     localStorage.setItem("storedCart", cartArrayString);
 }
@@ -133,19 +141,18 @@ function retrieveFromLocalStorage() {
         });
     }
 }
-  
+
+
 // Only execute render logic if we are on the cart page
 // Source: https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 document.addEventListener("DOMContentLoaded", () => {
-    retrieveFromLocalStorage();
+    initializeCart();
     // If on cart page, render all items
     if (document.querySelector("#cart-item-template")) {
         cart.forEach(createElement);
         updateCartTotal();
     }
 });
-
-initializeCart();
 
   
 

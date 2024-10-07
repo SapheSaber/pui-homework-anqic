@@ -119,7 +119,7 @@ h2 {
     margin-right: 50px;
 }
 
-.cart-item {
+.cart-product{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -161,12 +161,6 @@ h2 {
 .cart-total {
     align-items: center;
     font-size: 25px;
-}
-
-.remove{
-    font-size: 22px;
-    font-weight: bold;
-    text-decoration: underline;
 }
 
 .remove:hover{
