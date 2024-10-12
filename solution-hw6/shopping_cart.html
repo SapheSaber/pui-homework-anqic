@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>Bun Bun Shopping Cart</title>
+  
+  <body>
+    <header>
+      <link rel="stylesheet" href="css/styles.css">
+      <script src="js/rollsData.js"></script>
+      <script defer src="js/cart.js"></script>
+    </header>
+
+    <nav>
+      <a href="product_gallery.html" class="logo">
+        <img src="../assets/logo/logo-01.svg" alt="Bun Bun Logo">
+      </a>
+      <div class="selection">
+        <a href="product_gallery.html">PRODUCTS</a>
+        <a href="shopping_cart.html" class="active">CART</a>
+      </div>
+    </nav>
+
+    <main>
+        <h2>Our hand-made cinnamon rolls</h2>
+        <div class="cart-items">
+          <template id="cart-item-template">
+            <div class="cart-item">
+              <div class="cart-product">
+                <div class="the-product">
+                  <img class="product-image" src="" alt="Cinnamon Roll Image">
+                  <div class="product-info">
+                      <p class="product-name"></p>
+                      <p class="glazing-info"></p>
+                      <p class="pack-size-info"></p>
+                  </div>
+                </div>
+                <p class="price-tag"></p>
+              </div>
+                <p class="remove">Remove</p>
+            </div>
+          </template>
+    
+        </div>
+
+        <div class="checkout">
+          <p>Total</p>
+          <div class="cart-total">
+            <p id="cart-total-price">$0.00</p>
+            <button>Checkout</button>
+          </div>
+        </div>
+
+    </main>
+
+  </body>
+</html>
