@@ -6,7 +6,7 @@
 
 
 # **FP1 \- Proposal for Critique**
-## **Idea 1: Personal Website
+## **Idea 1: Personal Website**
 ![Sketch 1](idea1_sketch.jpg)
 ### Purpose
 The goal of the personal website is to create an engaging online portfolio that showcases my skills, projects, and interests. It will serve as a digital introduction to potential employers or anyone interested in learning more about me, providing easy access to my resume, portfolio, and contact information.
@@ -29,7 +29,7 @@ The goal of the personal website is to create an engaging online portfolio that 
 
 
 
-## ** Idea 2: Personal Finance Website
+## **Idea 2: Personal Finance Website**
 ![Sketch 2](idea2_sketch.jpg)
 ### Purpose
 The goal of the personal finance website is to help users track and manage their savings and spending through interactive tools. It will also offer beginner-friendly educational resources on essential personal finance concepts, such as budgeting, saving, and credit, empowering users to make better financial decisions and build healthy financial habits.
@@ -52,7 +52,7 @@ Input Forms for Spending and Saving: Users can log their transactions with categ
 
 
 
-## **Idea 3: Ice Cream in Pittsburgh Website
+## **Idea 3: Ice Cream in Pittsburgh Website**
 ![Sketch 3](idea3_sketch.jpg)
 ### Purpose
 The goal of the Ice Cream in Pittsburgh website is to provide users with a comprehensive guide to the best ice cream shops in the city. It will feature shop locations, descriptions, and user-friendly ratings based on Google reviews, helping visitors and locals discover new places to enjoy ice cream in Pittsburgh. It also provides receipts on how to make ice-cream at home. 
