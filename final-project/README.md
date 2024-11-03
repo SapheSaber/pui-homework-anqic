@@ -3,6 +3,35 @@
 # **FP3 \- Final Project Check-in**
 
 # FP2 - Evaluation of the Final project
+## Project Description
+The personal finance website is designed to help users track and manage their savings, spending, and net worth with ease. It includes interactive tools to visualize financial data and offers educational resources on fundamental personal finance concepts such as budgeting, saving, and credit. My goal is to empower users to make informed financial decisions and cultivate healthy financial habits. The platform is optimized for both desktop and iPad, making it accessible and user-friendly for a wide audience.
+
+
+## High-Fi Prototypes
+
+### *Prototype 1*
+![Dashboard Page](images/prototype1.png)
+*Description:*
+The Dashboard Overview provides a clean, organized view of users’ financial data, including summaries of spending, savings, and net worth. Users can quickly assess their financial health using color-coded indicators and easy-to-read charts.
+
+### *Prototype 2*
+![Record Saving and Spending page](images/prototype1.png)
+*Description:*
+This prototype focuses on the Add New Record feature, enabling users to log their financial transactions with options to categorize each entry and set dates. The interface is streamlined to support quick and accurate data entry.
+
+## Usability Test
+The type of testing I conducted is the Thinking-Outloud Testing, where users need to verbalize their thoughts while completing tasks, providing insights into usability and immediate reactions. During the usability testing, I received valuable feedback on functionality and user experience.  Users appreciated the simple, clean layout of the dashboard, with its visually engaging and accessible design. They specifically liked how the Add Record feature was easy to find and navigate. Based on their feedback, I removed the redundant “Choose Date” button to simplify the interaction, enabling direct date selection through the date field.
+
+A key suggestion was to add a net worth indicator on each record card, which I redesigned to provide immediate visual feedback on whether the net worth is positive or negative. This color-coded indicator helps users quickly assess their financial status per transaction, enhancing usability. Additionally, users suggested a custom category option for both savings and spending. While I found this feature beneficial, it would add complexity to the database structure and the backend, so I decided to place it in a “nice-to-have” list for future updates.
+
+Other feedback included ideas for adding a “currency” tab to change and convert the recorded currency and a login page for each user. This wasn’t part of my initial plan, but it was a good feature to have to give users more freedom to customize the webpage. I am considering those two feedbacks for future iterations, but for now due to the time constrain and the complexity in implementing these, I put those two features in the "nice to have" list. 
+
+## Updated Designs
+Dashboard Enhancements: Integrated a color-coded net worth indicator on each record card, offering users a quick visual summary of positive or negative net worth.
+
+Streamlined Date Selection: Removed the redundant “Choose Date” button, simplifying date input by enabling users to click directly on the date field.
+
+Provide "Type" selection for Savings
 
 
 # **FP1 \- Proposal for Critique**
