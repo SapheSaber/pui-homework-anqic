@@ -10,12 +10,13 @@ The personal finance website is designed to help users track and manage their sa
 ## High-Fi Prototypes
 
 ### *Prototype 1*
-![Dashboard Page](images/prototype1.png)
+![Dashboard Page](dashboard.png)
 *Description:*
 The Dashboard Overview provides a clean, organized view of users’ financial data, including summaries of spending, savings, and net worth. Users can quickly assess their financial health using color-coded indicators and easy-to-read charts.
 
 ### *Prototype 2*
-![Record Saving and Spending page](images/prototype1.png)
+![Record Saving and Spending page](record.png)
+![Record Saving and Spending page2](record2.png)
 *Description:*
 This prototype focuses on the Add New Record feature, enabling users to log their financial transactions with options to categorize each entry and set dates. The interface is streamlined to support quick and accurate data entry.
 
@@ -27,11 +28,10 @@ A key suggestion was to add a net worth indicator on each record card, which I r
 Other feedback included ideas for adding a “currency” tab to change and convert the recorded currency and a login page for each user. This wasn’t part of my initial plan, but it was a good feature to have to give users more freedom to customize the webpage. I am considering those two feedbacks for future iterations, but for now due to the time constrain and the complexity in implementing these, I put those two features in the "nice to have" list. 
 
 ## Updated Designs
-Dashboard Enhancements: Integrated a color-coded net worth indicator on each record card, offering users a quick visual summary of positive or negative net worth.
-
-Streamlined Date Selection: Removed the redundant “Choose Date” button, simplifying date input by enabling users to click directly on the date field.
-
-Provide "Type" selection for Savings
+![Record Saving and Spending page2](update1.png)
+Record Cars Enhancements: Integrated a color-coded net worth indicator on each record card, offering users a quick visual summary of positive or negative net worth.
+![Record Saving and Spending page2](update2.png)
+Streamlined Date Selection: Removed the redundant “Choose Date” button, simplifying date input by enabling users to click directly on the date field, and also providing the "Type" selection for Savings.
 
 
 # **FP1 \- Proposal for Critique**
