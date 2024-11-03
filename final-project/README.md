@@ -31,8 +31,59 @@ Other feedback included ideas for adding a “currency” tab to change and conv
 ![Record Saving and Spending page2](update1.png)
 Record Cars Enhancements: Integrated a color-coded net worth indicator on each record card, offering users a quick visual summary of positive or negative net worth.
 ![Record Saving and Spending page2](update2.png)
+![Record Saving and Spending page for calendar](update_calendar.png)
 Streamlined Date Selection: Removed the redundant “Choose Date” button, simplifying date input by enabling users to click directly on the date field, and also providing the "Type" selection for Savings.
 
+## Feedback Summary
+
+Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words).
+
+## Milestones
+
+Outline weekly milestones to plan your expected implementation progress until the end of the semester (\~300 words). 
+
+### *Implementation Plan*
+
+- [ ] Week 9 Oct 28 \- Nov 1:
+  - [X] FP1 due
+  - [ ] ...
+  
+- [ ] Week 10 Nov 4 \- Nov 8:   
+  - [ ] FP2 due
+
+- [ ] Week 11 Nov 11 \- Nov 15:  
+- [ ] Week 12 Nov 18 \- Nov 22:   
+- [ ] Week 13 Nov 25 \- Nov 29:  
+
+  - [ ] Thanksgiving  
+- [ ] Week 14 Dec 2 \- Dec 6:  
+  - [ ] FP4 due - Submit FP4 with all updates and final report; complete final user testing documentation.
+
+### *Libraries and Other Components*
+
+- Chart.js: To create interactive charts for financial data visualization.
+- Moment.js: For easy handling and formatting of date data in transaction records.
+- jQuery: For simplified DOM manipulation, particularly in form elements.
+* 
+
+
+## Generative AI Use Plan
+
+Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).
+
+### *Tool Use*
+
+ What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
+
+* ChatGPT  
+  * I will use it for … because it can help me …  
+  * I will not use it for … because it might not be able to help me with …   
+* GitHub Copilot  
+* ...
+
+### *Responsible Use*
+
+How would you use Generative AI responsibly? 
 
 # **FP1 \- Proposal for Critique**
 ## **Idea 1: Personal Website**
