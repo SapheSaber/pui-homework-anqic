@@ -4,7 +4,7 @@
 
 # FP2 - Evaluation of the Final project
 ## Project Description
-The personal finance website is designed to help users track and manage their savings, spending, and net worth with ease. It includes interactive tools to visualize financial data and offers educational resources on fundamental personal finance concepts such as budgeting, saving, and credit. My goal is to empower users to make informed financial decisions and cultivate healthy financial habits. The platform is optimized for both desktop and iPad, making it accessible and user-friendly for a wide audience.
+The personal finance website is designed to help users track and manage their savings, spending, and net worth with ease. It includes interactive tools to visualize financial data and offers educational resources on fundamental personal finance concepts such as budgeting, saving, and credit. My goal is to empower users to make informed financial decisions and cultivate healthy financial habits. The platform is optimized for both desktops and iPads, making it accessible and user-friendly for a wide audience.
 
 
 ## High-Fi Prototypes
@@ -36,54 +36,64 @@ Streamlined Date Selection: Removed the redundant “Choose Date” button, simp
 
 ## Feedback Summary
 
-Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words).
+During the lab session, I received valuable feedback on ways to improve the usability and clarity of my personal finance website. One of the primary suggestions was to remove the dots on the calendar if they lack a clear function, as users found them visually confusing without an explanation. Additionally, users suggested changing the term “Saving” to “Income” for greater clarity in labeling, making it more intuitive for users to understand the sources of their financial entries. But I decided not to change the "Saving" title because I am planning to allow user to choose types of "saving" which could be cover alot of types user save money. 
+
+For the Record Card feature, users emphasized the need for better visual hierarchy to distinguish between the title and details of each record. They recommended a more dramatic visual presentation of the Record Card, especially by making the final daily record or summary more prominent and visible. This feedback also included suggestions to add indicators beyond just color to signify positive or negative net worth changes. For instance, adding a background color to the net change section would help draw attention, while renaming “net worth” to “net change” or consolidating it into a single large number with a +/- sign would make it more intuitive and visible to users at a glance.
+
+Another small but helpful suggestion was to change “Datepicker” to simply “Date” to simplify the language and avoid potential confusion. By implementing these changes, I aim to create a clearer and more visually engaging interface that better serves the needs of users. This feedback highlighted the importance of consistent language, visual hierarchy, and intuitive labeling in designing an effective personal finance tool.
 
 ## Milestones
 
-Outline weekly milestones to plan your expected implementation progress until the end of the semester (\~300 words). 
+This plan outlines the weekly milestones for implementing and refining the personal finance website project, with a target completion date of Dec 6.
 
 ### *Implementation Plan*
 
-- [ ] Week 9 Oct 28 \- Nov 1:
+- [X] Week 9 Oct 28 \- Nov 1:
   - [X] FP1 due
-  - [ ] ...
   
 - [ ] Week 10 Nov 4 \- Nov 8:   
-  - [ ] FP2 due
+  - [X] FP2 due
+  - [ ] Complete the basic structure for the remaining three pages, ensuring all menu items are functional and the navigation is seamless.
 
-- [ ] Week 11 Nov 11 \- Nov 15:  
-- [ ] Week 12 Nov 18 \- Nov 22:   
-- [ ] Week 13 Nov 25 \- Nov 29:  
-
-  - [ ] Thanksgiving  
+- [ ] Week 11 Nov 11 \- Nov 15:
+  - [ ]  Implement the Record page interface, focusing on the layout and general structure.
+  - [ ]  Begin setting up form fields for user input on the Record page, allowing the entry of financial data.
+      
+- [ ] Week 12 Nov 18 \- Nov 22:
+  - [ ] Finalize the Record page, including the second-page form interface.
+  - [ ] Ensure Record page functionality works as expected, allowing users to fill in forms for both spending and saving categories.
+  - [ ] Display submitted records on the main Record page for a user-friendly summary of their entries.
+          
+- [ ] Week 13 Nov 25 \- Nov 29:
+- [ ] implemented different charts for the dahsboard page
+- [ ] collect information that will be displayed on the "Learning" page & complete the Leanring page
+- [ ] Thanksgiving (adjust schedule as needed for holiday)
+        
 - [ ] Week 14 Dec 2 \- Dec 6:  
-  - [ ] FP4 due - Submit FP4 with all updates and final report; complete final user testing documentation.
+  - [ ] FP4 due - Incorporate all updates, finalize the project report, and document the results of the final user testing.
 
 ### *Libraries and Other Components*
 
 - Chart.js: To create interactive charts for financial data visualization.
 - Moment.js: For easy handling and formatting of date data in transaction records.
 - jQuery: For simplified DOM manipulation, particularly in form elements.
-* 
 
 
 ## Generative AI Use Plan
 
-Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).
+To enhance implementation, I plan to use Generative AI tools such as ChatGPT to support various aspects of the project. ChatGPT will be particularly useful for understanding and implementing the JavaScript libraries I’ve chosen, especially Chart.js for data visualizations. ChatGPT can provide code snippets, explain complex concepts, and troubleshoot common issues with library integration, which will be helpful when trying to make the charts respond to user-inputted data.
+
+Additionally, I will use ChatGPT for crafting user-friendly error messages and refining the language on instructional sections of the Learning page. For instance, it can help with phrasing tips on budgeting or saving, ensuring the language is clear and accessible.
+
+To maintain transparency and responsible AI use, I will add comments to the code to cite lines or segments generated by ChatGPT or other Generative AI tools. This will indicate which parts of the code are AI-assisted, ensuring clear documentation for future reference and accountability.
 
 ### *Tool Use*
-
- What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
-
-* ChatGPT  
-  * I will use it for … because it can help me …  
-  * I will not use it for … because it might not be able to help me with …   
-* GitHub Copilot  
-* ...
+*ChatGPT*
+- I will use it for understanding and integrating libraries (e.g., Chart.js) by asking for example snippets or troubleshooting integration issues. It will also assist with crafting accessible instructional text for the Learning page.
+- I will not use it for creating the HTML and CSS structure of the pages or implementing foundational JavaScript features like adding notes and user input forms, as these aspects are intended to demonstrate my understanding of lecture material.
 
 ### *Responsible Use*
-
-How would you use Generative AI responsibly? 
+I will  cite lines of code generated by ChatGPT with comments in my files to indicate AI assistance, providing transparency and clear documentation. For content, AI-generated instructional text will be edited for clarity, accuracy, and suitability for the intended user base.
 
 # **FP1 \- Proposal for Critique**
 ## **Idea 1: Personal Website**
