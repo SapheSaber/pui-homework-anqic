@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/bc65c4255d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <div class="avatar"></div>
+            <p>Anna Li</p>
+        </div>
+        <nav class="nav">
+            <a href="#" class="nav-item active"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+            <a href="record.html" class="nav-item"><i class="fa-solid fa-pen"></i> Record</a>
+            <a href="learning.html" class="nav-item"><i class="fa-solid fa-graduation-cap"></i> Learning</a>
+        </nav>
+    </div>
+    
+    <div class="content">
+        <section class="dashboard">
+            <div class="spending-section">
+                <div class="spending-card">
+                    <h2>Spending</h2>
+                    <div class="spending-info">
+                        <div class="spending-chart">
+                            <!-- Placeholder for pie chart -->
+                        </div>
+                        <div class="spending-details">
+                            <p>Total: $530</p>
+                            <ul>
+                                <li><span class="dot blue"></span> Food 40% ($200)</li>
+                                <li><span class="dot light-blue"></span> Cloth 22% ($120)</li>
+                                <li><span class="dot purple"></span> House 20% ($100)</li>
+                                <li><span class="dot green"></span> Food 10% ($50)</li>
+                                <li><span class="dot red"></span> Education 8% ($44)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="savings-card">
+                    <h2>Savings</h2>
+                    <div class="savings-info">
+                        <div class="progress-circle">72%</div>
+                        <div class="savings-details">
+                            <p><span>Saving goal</span> $32,000</p>
+                            <p><span>Remaining</span> $7,600</p>
+                            <p>Total Saved: $24,400</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="saving-chart-section">
+                <h2>Saving</h2>
+                <p>Total: $15,300</p>
+                <div class="saving-chart">
+                    <!-- Placeholder for line chart -->
+                </div>
+                <div class="chart-controls">
+                    <button class="active">Day</button>
+                    <button class="active">Week</button>
+                    <button class="active">Month</button>
+                    <button>Year</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
