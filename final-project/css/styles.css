@@ -98,7 +98,13 @@ body {
     gap: 20px;
 }
 
-.spending-card, .savings-card {
+.saving-chart-section{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.spending-card, .savings-card, .saving-chart-section {
     flex: 1;
     background-color: #fff;
     padding: 20px;
@@ -112,64 +118,161 @@ body {
 
 .spending-info, .savings-info {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    
+}
+
+.spending-header {
+    display: flex;
+    align-items: baseLine;
+    align-content: center; 
+    gap: 10px; 
+    border-bottom: 1.5px solid #e0e0e0; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px; 
+}
+
+.spending-header h2 {
+    margin: 0; 
+}
+
+#savingChart{
+    height: 100%;
+    width: auto;
+}
+
+#category-list li{
+    list-style-type: none; 
+    margin-bottom: 8px; 
+}
+.chart-legend p{
+    font-size:20px;
+    padding-bottom: 15px;
+    margin: 0 0 8px 0;
 }
 
 .spending-chart {
     margin-left: 10px;
-    width: 100px;
-    height: 100px;
-    background-color: #eee;
+    width: 65%;
+    height: auto;
     border-radius: 50%;
     margin-right: 20px;
 }
 
-.spending-details ul {
-    list-style: none;
+#spendingChart {
+    width: 42% !important; 
+    height: auto !important;
 }
 
-.spending-details li {
-    display: flex;
-    align-items: center;
+.year-filter-container {
+    text-align: right;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+#year-filter {
+    padding: 5px;
+    border: 1px solid #F8F8FF;
     font-size: 14px;
+    padding: 8px 12px; 
+    font-size: 16px; 
+    border-radius: 12px;
+    color: #615E83; 
+    outline: none; 
+    background-color: #F8F8FF;
 }
-
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 8px;
-    display: inline-block;
-}
-
-.blue { background-color: #1f77b4; }
-.light-blue { background-color: #66c2a5; }
-.purple { background-color: #8e44ad; }
-.green { background-color: #27ae60; }
-.red { background-color: #e74c3c; }
 
 .savings-info {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
 }
 
-.progress-circle {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    background: conic-gradient(#1f77b4 0% 72%, #ddd 72% 100%);
-    color: #1f77b4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-}
 
 .savings-details p {
     font-size: 14px;
     color: #555;
+}
+
+.savings-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.savings-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.editable-goal {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#savingsGoalDisplay {
+    display: inline-block;
+}
+
+#savingsGoalInput {
+    display: none; /* Initially hidden */
+    font-size: 18px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 2px 5px;
+    width: 80px;
+}
+
+.editable-goal i {
+    cursor: pointer;
+    color: #888;
+}
+
+.remaining-label {
+    color: #e74c3c;
+    font-size: 14px;
+}
+
+.remaining-amount {
+    color: #e74c3c;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.saving-chart {
+    position: relative;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.savings-percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.savings-percentage h2 {
+    margin-top:80px;
+    font-size: 32px;
+    color: #333;
+}
+
+.savings-percentage p {
+    margin-top:15px;
+    font-size: 14px;
+    color: #666;
 }
 
 .savings-details span {
@@ -178,67 +281,74 @@ body {
     display: block;
 }
 
-.saving-chart-section {
-    background-color: #fff;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.saving-header {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
 }
 
-.saving-chart-section h2 {
-    font-size: 18px;
-    margin-bottom: 5px;
+.saving-header p{
+    margin-left: 35px;
+    font-size: 20px
 }
 
-.saving-chart {
+.saving-line-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.saving-line-chart {
+    position: relative;
     width: 100%;
-    height: 200px;
-    background-color: #eef;
-    border-radius: 8px;
-    margin-top: 15px;
 }
 
 .chart-controls {
     display: flex;
+    justify-content: flex-end;
     gap: 10px;
     margin-top: 10px;
+    background-color: #f7f7fb; 
+    border-radius: 20px;
+    padding: 5px 10px;
 }
 
 .chart-controls button {
-    padding: 5px 10px;
+    padding: 6px 16px;
     border: none;
-    background-color: #4caf50;
-    color: #fff;
-    border-radius: 5px;
+    border-radius: 15px;
+    background-color: transparent; 
+    color: #9291A5; 
     cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .chart-controls button.active {
-    background-color: #2e7d32;
-}
-
-.chart-controls button:not(.active) {
-    background-color: #ccc;
-    color: #333;
+    background-color: #328A35; 
+    color: #fff; 
 }
 
 .chart-controls button:hover {
-    opacity: 0.9;
+    background-color: #e0e0e0; 
+    color: #333;
 }
+
 
 /* Style for Record Page */
 .calendar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    border-bottom: 2px solid #E5E5EF; 
+    padding: 35px;
+    margin: 5px 25px;
+
 }
 
 .calendar-header h2 {
-    font-size: 24px;
+    font-size: 28px;
     color: #333;
 }
 
@@ -273,8 +383,38 @@ body {
     gap: 20px;
     margin-top: 15px;
     flex-wrap: wrap;
-    padding:25px;
+    padding:35px;
 }
+
+.month-navigation {
+    display: flex;
+    margin-left: 35px;
+    margin-right:35px;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 28px;
+    color: #4A3AFF;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #333; /* Darker color on hover */
+}
+
+#month-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
 
 /* Record Entry Card Styling */
 .record-entry {
@@ -289,21 +429,26 @@ body {
 
 /* Color-coded borders for entries */
 .red-border {
-    border: 2px solid #e74c3c;
+    border: 3px solid #e74c3c;
 }
 
 .green-border {
-    border: 2px solid #27ae60;
+    border: 3px solid #27ae60;
 }
 
 .gray-border {
-    border: 2px solid #bdc3c7;
+    border: 3px solid #bdc3c7;
 }
 
 /* Text styling within entries */
 .record-entry p {
-    margin: 5px 0;
-    color: #333;
+    margin: 15px 1px;
+}
+
+.record-entry .date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #141414;
 }
 
 .record-entry .expense {
@@ -312,14 +457,15 @@ body {
 }
 
 .record-entry .income {
-    color: #27ae60;
+    color: #328A35;
     font-weight: bold;
 }
 
-.record-entry .net-worth {
-    font-size: 12px;
-    color: #555;
+.record-entry .net-change {
+    font-size: 15px;
+    color: #141414;
 }
+
 
 /* Style for Add Record Page */
 .add-record {
@@ -334,6 +480,10 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .form-section h2 {
@@ -373,4 +523,28 @@ body {
 
 .submit-button:hover {
     background-color: rgb(85,51,255, 0.5);
+}
+
+/* Style for Learning Page */
+.section-header{
+    display: flex;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+    gap: 20px;
+    
+}
+
+.learning-section{
+    padding:5px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.section-content{
+    padding: 25px;
 }

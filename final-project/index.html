@@ -6,6 +6,9 @@
     <title>Personal Finance Dashboard</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://kit.fontawesome.com/bc65c4255d.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+
 </head>
 <body>
     <div class="sidebar">
@@ -24,50 +27,76 @@
         <section class="dashboard">
             <div class="spending-section">
                 <div class="spending-card">
-                    <h2>Spending</h2>
+                    <div class="spending-header">
+                        <h2>Spending</h2>
+                        <div class="year-filter-container">
+                            <select id="year-filter">
+                                <!-- post the availble year from the localStorage -->
+                            </select>
+                        </div>
+                    </div>
+                    
                     <div class="spending-info">
                         <div class="spending-chart">
-                            <!-- Placeholder for pie chart -->
+                            <!-- pie chart -->
+                            <canvas id="spendingChart"></canvas>
                         </div>
-                        <div class="spending-details">
-                            <p>Total: $530</p>
-                            <ul>
-                                <li><span class="dot blue"></span> Food 40% ($200)</li>
-                                <li><span class="dot light-blue"></span> Cloth 22% ($120)</li>
-                                <li><span class="dot purple"></span> House 20% ($100)</li>
-                                <li><span class="dot green"></span> Food 10% ($50)</li>
-                                <li><span class="dot red"></span> Education 8% ($44)</li>
-                            </ul>
+                        <div class="chart-legend">
+                            <p>Total: $<span id="total-spending">0</span></p>
+                            <ul id="category-list"></ul>
                         </div>
                     </div>
                 </div>
 
                 <div class="savings-card">
-                    <h2>Savings</h2>
                     <div class="savings-info">
-                        <div class="progress-circle">72%</div>
-                        <div class="savings-details">
-                            <p><span>Saving goal</span> $32,000</p>
-                            <p><span>Remaining</span> $7,600</p>
-                            <p>Total Saved: $24,400</p>
+                        <div>
+                            <p>Saving goal</p>
+                            <div class="editable-goal">
+
+                                <h3 id="savingsGoalDisplay">0</h3>
+                                <input type="number" id="savingsGoalInput" min="0" />
+                                <i class="fa fa-pencil" id="editGoalIcon" onclick="editGoal()"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <p class="remaining-label">Remaining</p>
+                            <h3 id="remainingAmount" class="remaining-amount">0</h3>
+                        </div>
+                    </div>
+
+                    <div class="saving-chart">
+                        <canvas id="savingsProgressChart"></canvas>
+                        <div class="savings-percentage">
+                            <!-- default value 0 -->
+                            <h2 id="savingsPercentage">0</h2> 
+                            <p id="totalSavedDisplay">Total Saved: 0</p>
                         </div>
                     </div>
                 </div>
+                
             </div>
 
             <div class="saving-chart-section">
-                <h2>Saving</h2>
-                <p>Total: $15,300</p>
-                <div class="saving-chart">
-                    <!-- Placeholder for line chart -->
+                <div class="saving-line-header">
+                    <div class="saving-header">
+                        <h2>Timeline</h2>
+                        <p>Total: $<span id="total-saving">0</span></p>
+                    </div>
+                    <div class="chart-controls">
+                        <button id="day-btn">Day</button>
+                        <button id="week-btn">Week</button>
+                        <button id="month-btn" class="active">Month</button>
+                        <button id="year-btn">Year</button>
+                    </div>
                 </div>
-                <div class="chart-controls">
-                    <button class="active">Day</button>
-                    <button class="active">Week</button>
-                    <button class="active">Month</button>
-                    <button>Year</button>
+                
+                <div class="saving-line-chart">
+                    <canvas id="savingChart"></canvas>
                 </div>
+                
             </div>
+            
         </section>
     </div>
 </body>
