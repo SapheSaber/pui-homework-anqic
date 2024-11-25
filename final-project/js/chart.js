@@ -185,8 +185,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Edit goal functionality
-    window.editGoal = function () {
+    // Edit goal functionality - refined with the help of ChatGPT
+    window.editGoal = function editGoal() {
         const savingsGoalDisplay = document.getElementById('savingsGoalDisplay');
         const savingsGoalInput = document.getElementById('savingsGoalInput');
 

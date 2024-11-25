@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning - Personal Finance</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/learning_style.css">
     <script src="https://kit.fontawesome.com/bc65c4255d.js" crossorigin="anonymous"></script>
+    <script src="js/toggle.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -14,9 +16,10 @@
             <p>Anna Li</p>
         </div>
         <nav class="nav">
-            <a href="index.html" class="nav-item"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
-            <a href="record.html" class="nav-item"><i class="fa-solid fa-pen"></i> Record</a>
-            <a href="learning.html" class="nav-item active"><i class="fa-solid fa-graduation-cap"></i> Learning</a>
+            <a href="index.html" class="nav-item "><i class="fa-solid fa-chart-line"></i> Dashboard</a>
+            <a href="record.html" class="nav-item"><i class="fa-regular fa-calendar"></i>View Records</a>
+            <a href="add_record.html" class="nav-item"><i class="fa-solid fa-pen"></i> Add Record</a>
+            <a href="#" class="nav-item active"><i class="fa-solid fa-graduation-cap"></i> Learning</a>
         </nav>
     </div>
 
@@ -24,7 +27,11 @@
         <section class="learning">
             <div class="learning-section">
 
-                <h2 class="section-header">Budgeting</h2>
+                <div class="section-header">
+                    <h2 >Budgeting</h2>
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+                
                 <div class="section-content">
                     <p>Budgeting is the process of creating a financial plan that outlines 
                         expected income, expenses, and savings over a specific period. It 
@@ -35,15 +42,80 @@
                         or investments, and prepare for future expenses. 
                         By tracking income sources and categorizing expenses into 
                         fixed and variable costs, budgeting enables proactive financial management, 
-                        aids in decision-making, and establishes a foundation for long-term financial stability.</p>
+                        aids in decision-making, and establishes a foundation for long-term financial stability.
+                    </p>
+
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/ELddtcZouP0?si=diLMFqfXK-Z1uCgv" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            referrerpolicy="strict-origin-when-cross-origin" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
                 </div>
+
             </div>
 
             <div class="learning-section">
-                <h2>Saving & Investing</h2>
+                <div class="section-header">
+                    <h2 >Saving & Investing</h2>
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+                
+                <div class="section-content">
+                <p>Saving and investing are fundamental practices for building financial security and achieving 
+                    long-term goals. Saving involves setting aside money regularly in safe and easily accessible 
+                    accounts to cover short-term needs, emergencies, or planned expenses. It prioritizes capital 
+                    preservation over growth, typically earning minimal returns. Investing, on the other hand, 
+                    focuses on growing wealth over time by allocating money into assets such as stocks, bonds, 
+                    mutual funds, or real estate. While investing carries higher risks, it also offers the potential 
+                    for higher returns. Together, saving and investing form a balanced financial strategy, ensuring 
+                    liquidity for immediate needs while building wealth for future opportunities.
+                </p>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/6UdC93aERMY" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                </div>
             </div>
             <div class="learning-section">
-                <h2>Credit Scores</h2>
+                <div class="section-header">
+                    <h2 >Credit Scores</h2>
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+                
+                <div class="section-content">
+                <p>
+                    A credit score is a numerical representation of an individual's creditworthiness, based on their 
+                    credit history and financial behavior. Ranging typically from 300 to 850, a higher credit score 
+                    indicates a lower risk to lenders, making it easier to qualify for loans, credit cards, and favorable 
+                    interest rates. Factors influencing a credit score include payment history, amounts owed, length of 
+                    credit history, credit mix, and recent credit inquiries. Maintaining a good credit score requires 
+                    timely bill payments, keeping debt levels low, and avoiding excessive credit applications. A strong 
+                    credit score is essential for achieving financial goals and securing financial opportunities.
+                </p>
+                <div class="video-container">
+                    <iframe 
+                        src="https://www.youtube.com/embed/_UfyrhHqPkM?si=8NX8lqgtMY4BfTRT" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                    
+                </div>
+            </div>
             </div>
         </section>
     </div>

@@ -1,0 +1,69 @@
+.section-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    gap: 20px;
+    justify-content: space-between
+
+}
+
+.learning{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+}
+
+.learning-section{
+    padding:5px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+
+}
+
+.section-content{
+    padding: 25px;
+}
+
+.learning-section .section-header i {
+    font-size: 25px;
+    transition: transform 0.3s;
+}
+
+.content-section{
+    display: none;
+}
+
+.fas.fa-chevron-down:hover {
+    cursor: pointer;
+}
+
+.fas.fa-chevron-up:hover {
+    cursor: pointer;
+}
+
+.video-container {
+    position: relative;
+    width: 60%; 
+    max-width: 800px; 
+    aspect-ratio: 16 / 9; 
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; 
+}

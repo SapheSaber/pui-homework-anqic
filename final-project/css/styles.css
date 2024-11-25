@@ -50,7 +50,7 @@ body {
     justify-content: space-around;
 }
 
-.nav .fa-solid{
+.nav .fa-solid, .fa-regular{
     padding: 10px;
     font-size: 22px;
 }
@@ -472,6 +472,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
+    padding:25px;
 }
 
 .form-section {
@@ -525,26 +526,3 @@ body {
     background-color: rgb(85,51,255, 0.5);
 }
 
-/* Style for Learning Page */
-.section-header{
-    display: flex;
-    margin-left: 25px;
-    margin-top: 25px;
-    margin-right: 25px;
-    gap: 20px;
-    
-}
-
-.learning-section{
-    padding:5px;
-    background-color: #fff;
-    border-radius: 8px;
-    margin-top: 25px;
-    margin-left: 25px;
-    margin-right: 25px;
-
-}
-
-.section-content{
-    padding: 25px;
-}
