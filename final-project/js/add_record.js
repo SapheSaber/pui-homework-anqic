@@ -1,6 +1,4 @@
 
-
-// Wait for this page to load and start the feature
 document.addEventListener('DOMContentLoaded', function() {
     const spendingForm = document.getElementById('spending-form');
     const savingForm = document.getElementById('saving-form');
@@ -32,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Save updated records back to localStorage
             localStorage.setItem('financeRecords', JSON.stringify(records));
 
-            // Clear form inputs
             document.getElementById('spending-date').value = '';
             document.getElementById('spending-amount').value = '';
             document.getElementById('spending-type').value = 'Pick a type';

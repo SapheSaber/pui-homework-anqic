@@ -1,0 +1,90 @@
+
+/* Calendar Records Grid */
+.calendar-records {
+    display: flex;
+    gap: 20px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    padding:35px;
+}
+
+.month-navigation {
+    display: flex;
+    margin-left: 35px;
+    margin-right:35px;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 28px;
+    color: #4A3AFF;
+    padding: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.arrow:hover {
+    color: #333; /* Darker color on hover */
+}
+
+#month-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* Record Entry Card Styling */
+.record-entry {
+    width: 180px;
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Color-coded borders for entries */
+.red-border {
+    border: 3px solid #e74c3c;
+}
+
+.green-border {
+    border: 3px solid #27ae60;
+}
+
+.gray-border {
+    border: 3px solid #bdc3c7;
+}
+
+/* Text styling within entries */
+.record-entry p {
+    margin: 15px 1px;
+}
+
+.record-entry .date {
+    font-size: 18px;
+    font-weight: bold;
+    color: #141414;
+}
+
+.record-entry .expense {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.record-entry .income {
+    color: #328A35;
+    font-weight: bold;
+}
+
+.record-entry .net-change {
+    font-size: 15px;
+    color: #141414;
+}
+
