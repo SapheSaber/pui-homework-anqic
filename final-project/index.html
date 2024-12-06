@@ -17,12 +17,25 @@
             <div class="avatar"></div>
             <p>Anqi Chen</p>
         </div>
-        <nav class="nav">
-            <a href="#" class="nav-item active"><i class="fa-solid fa-chart-line"></i> Dashboard</a>
-            <a href="record.html" class="nav-item"><i class="fa-regular fa-calendar"></i>View Records</a>
-            <a href="add_record.html" class="nav-item"><i class="fa-solid fa-pen"></i> Add Record</a>
-            <a href="learning.html" class="nav-item"><i class="fa-solid fa-graduation-cap"></i> Learning</a>
+        <nav class="nav" role="navigation" aria-label="Main Navigation">
+            <a href="#" class="nav-item active">
+                <i class="fa-solid fa-chart-line" aria-hidden="true"></i> 
+                <span class="visually-hidden">Go to Dashboard</span> Dashboard
+            </a>
+            <a href="record.html" class="nav-item">
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                <span class="visually-hidden">View your records</span> View Records
+            </a>
+            <a href="add_record.html" class="nav-item" aria-current="page">
+                <i class="fa-solid fa-pen" aria-hidden="true"></i> 
+                <span class="visually-hidden">Add a new record</span> Add Record
+            </a>
+            <a href="learning.html" class="nav-item">
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> 
+                <span class="visually-hidden">Learn financial concepts</span> Learning
+            </a>
         </nav>
+        
     </div>
     
     <div class="content">
@@ -57,7 +70,17 @@
                             <div class="editable-goal">
 
                                 <h3 id="savingsGoalDisplay">1</h3>
-                                <input type="number" id="savingsGoalInput" min="1" />
+                                <label for="savingsGoalInput" id="savingsGoalLabel"></label>
+                                <input 
+                                    type="number" 
+                                    id="savingsGoalInput" 
+                                    name="savingsGoalInput" 
+                                    min="1" 
+                                    aria-labelledby="savingsGoalLabel" 
+                                    aria-required="true" 
+                                    title="Enter your savings goal, must be a positive number" 
+                                    placeholder="Enter your savings goal"
+                                />
                                 <i class="fa fa-pencil" id="editGoalIcon" onclick="editGoal()"></i>
                             </div>
                         </div>
