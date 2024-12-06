@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
+    localStorage.clear();
+
     // Sample data for testing
     const sampleData = {
         "2024-11-19": { spending: 90, spendingType: "Clothing", saving: 20, savingType: "Salary" },

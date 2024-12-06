@@ -438,3 +438,98 @@ body {
     background-color: rgb(85,51,255, 0.5);
 }
 
+/* Disable flex for spending and savings cards on iPad Pro sizes */
+@media (max-width: 1366px) and (min-width: 1024px) {
+    .spending-section {
+        flex-direction: column;
+        gap: 15px; 
+    }
+
+    .spending-card, .savings-card {
+        display: block; 
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+    .spending-card h2, .savings-card h2, .saving-chart-section h2 {
+        font-size: 20px; 
+        margin-bottom: 15px;
+    }
+
+    .spending-chart {
+        width: 100%;  
+        height: auto; 
+    }
+
+    #spendingChart {
+        width: 80% !important; 
+        height: auto !important;
+        margin: 0 auto; 
+    }
+    .chart-controls {
+        justify-content: center;
+        margin-top: 15px; 
+    }
+
+    .savings-card {
+        max-width: 100%;
+        text-align: left; 
+    }
+    .saving-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between
+    }
+    .saving-line-chart {
+        width: 100%; 
+    }
+
+    .sidebar {
+        width: 220px; 
+        padding: 20px;
+    }
+    .nav {
+        gap: 10px; 
+    }
+    .nav-item {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+}
+
+/* for smaller screen size */
+@media (max-width: 1024px) {
+    .spending-section {
+        gap: 10px; 
+    }
+
+    .spending-card, .savings-card, .saving-chart-section {
+        margin-bottom: 15px;
+    }
+
+    .chart-controls {
+        flex-direction: row; 
+        gap: 5px;
+    }
+
+    .calendar-header {
+        flex-direction: column; 
+        align-items: flex-start;
+        margin: 5px 10px; 
+    }
+
+    .calendar-header h2 {
+        margin-bottom: 10px; 
+        font-size: 20px; 
+    }
+
+    .add-record {
+        flex-direction: column; 
+        gap: 15px; 
+        padding: 15px;
+    }
+
+    .form-section {
+        margin: 10px 0; 
+    }
+}

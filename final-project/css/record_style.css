@@ -6,6 +6,7 @@
     margin-top: 15px;
     flex-wrap: wrap;
     padding:35px;
+    justify-content: center;
 }
 
 .month-navigation {
