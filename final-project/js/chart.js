@@ -321,17 +321,40 @@ document.addEventListener("DOMContentLoaded", function () {
         
         switch (timeframe) {
             case 'This Week':
-                filteredData = data.filter(entry => (now - entry.date) / (1000 * 60 * 60 * 24) <= 7);
+                filteredData = data.filter(entry => {
+                    const entryDate = new Date(entry.date); 
+                    const startOfWeek = new Date(now);
+                    // move back to Sunday -> reprsenting as Sunday: 0, Mondy: 1 etc
+                    startOfWeek.setDate(now.getDate() - now.getDay()); 
+                    const endOfWeek = new Date(startOfWeek);
+                    endOfWeek.setDate(startOfWeek.getDate() + 6); // Saturday
+                    
+                    // Check if within week
+                    return entryDate >= startOfWeek && entryDate <= endOfWeek; 
+                });
                 break;
             case 'This Month':
-                filteredData = data.filter(entry => (now - entry.date) / (1000 * 60 * 60 * 24) <= 30);
+                // fixed by ChatGPT
+                filteredData = data.filter(entry => {
+                    const entryDate = new Date(entry.date); // Convert to Date object
+
+                    return (
+                        entryDate.getFullYear() === now.getFullYear() && 
+                        entryDate.getMonth() === now.getMonth()
+                    ); // Match current year and month
+                });
                 break;
             case 'This Year':
-                filteredData = data.filter(entry => (now - entry.date) / (1000 * 60 * 60 * 24) <= 365);
+                filteredData = data.filter(entry => {
+                    const entryDate = new Date(entry.date); 
+                    // Match current year
+                    return entryDate.getFullYear() === now.getFullYear(); 
+                });
                 break;
             default:
                 filteredData = data;
         }
+        console.log("Filtered Data:", filteredData);
         
         const buttons = document.querySelectorAll('.chart-controls button');
         buttons.forEach(

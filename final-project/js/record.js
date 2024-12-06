@@ -1,9 +1,27 @@
 document.addEventListener('DOMContentLoaded', function () {
+    // Sample data for testing
+    const sampleData = {
+        "2024-11-19": { spending: 90, spendingType: "Clothing", saving: 20, savingType: "Salary" },
+        "2024-11-12": { spending: 45, spendingType: "Food", saving: 50, savingType: "Salary" },
+        "2024-12-03": { spending: 20, spendingType: "Clothing", saving: 0, savingType: "" },
+        "2024-12-06": { spending: 100, spendingType: "Housing", saving: 200, savingType: "Bonus" },
+        "2024-12-17": { spending: 30, spendingType: "Education", saving: 0, savingType: "" },
+        "2024-12-15": { spending: 150, spendingType: "Other", saving: 300, savingType: "Part-Time Income" }
+    };
+
+    
     const records = JSON.parse(localStorage.getItem('financeRecords')) || {};
     const calendarContainer = document.querySelector('.calendar-records');
     const monthTitle = document.getElementById('month-title');
     const prevMonthBtn = document.getElementById('prev-month');
     const nextMonthBtn = document.getElementById('next-month');
+
+    // dump the sample data to the localStorage
+    for (const key in sampleData) {
+        records[key] = sampleData[key]; 
+    }
+    console.log("Sample data added:", records);
+    localStorage.setItem('financeRecords', JSON.stringify(records));
 
     
 
