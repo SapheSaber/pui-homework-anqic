@@ -20,24 +20,53 @@ The website integrates dynamic data visualizations powered by charts, an accessi
 
 ## Part 2: User Interaction
 
-How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
+How a user would interact with your website? 
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+### View Spending Chart:
+Interaction Type: Click the year dropdown in the “Spending” section to filter data.
+How to Reproduce: Click the dropdown on the Spending card and select a year.
+
+### View Savings Progress:
+Interaction Type: Modify the savings goal using the edit icon.
+How to Reproduce: Click the pencil icon in the Savings card, input a new goal, and press Enter on keyboard or click outside the input field.
+
+### Switch Timeframes:
+Interaction Type: Click buttons to switch between “This Week,” “This Month,” and “This Year” for the savings timeline.
+How to Reproduce: Click the respective buttons above the savings line chart to see different timeline of saving.
+
+### Add Records:
+Interaction Type: Fill out the form to log a new spending or saving record from the "Add a Record" section.
+How to Reproduce: Navigate to the "Add Record" page, fill out the form, and submit.
+
+### View Records:
+Interaction Type: Go to the Records page to see the added records, and click on the two arrows to view the added records from different months of this year.
+How to Reproduce: Navigate to the "View Records" page.
+
+### Watch Videos:
+Interaction Type: click on the video play icon to play the specific video, and using the arrow for each section to expand and collapse the content.
+How to Reproduce: Navigate to the "Learning" page.
 
 ## Part 3: External Tool
 
-Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
+### 1. Tool 1: Chart.js
+- Why did you choose it?
+  Chart.js offers a simple, responsive, and customizable way to implement data visualizations. It is lightweight and suitable for creating interactive pie and line charts.
+- How you used it?
+  Chart.js was used to render the pie chart for spending categories, donut chart for saving goal, and the line chart for the savings timeline.
+- What does it add to your website?
+  It enhances the website by providing users with clear, interactive, and aesthetically pleasing data visualizations.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+### 2. Tool 2: Font Awesome
+- Why did you choose it?
+  Font Awesome provides a comprehensive library of icons for the webite, which is easy to implement and highly customizable.
+- How do you use it?
+Used for navigation icons (e.g., Dashboard, Add Record) and UI elements like the savings goal edit icon.
+- What does it add to your website?
+  It improves visual clarity and makes the interface more intuitive.
 
 ## Part 4: Design Iteration
 
-Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
+Initially, the prototype was basic and lacked responsiveness. So during the development, I added responsive layouts for iPad Pro screen sizes to ensure usability across devices. Then, I replaced text buttons with icons for the navigation bar to enhance usability. I also use the tool WAVE to evaluate if my website meets the standard accessibility requirement. I noticed the errors like the lack of labels and headers for my page based on the evaluation from WAVE. I then fixed these issues. I improved contrast and accessibility by refining color choices and ensuring all images/icons had proper alt text.
 
 ## Part 5: Implementation Challenge
 
@@ -45,7 +74,8 @@ What challenges did you experience in implementing your website? (2-4 sentences 
 
 ## Part 6: Generative AI Use and Reflection
 
-Describe how you used Generative AI tools to create this final project (fill in the following information, write \~500 words in total).
+### Tools Used:
+ChatGPT: Used for coding assistance, debugging JavaScript logic.
 
 Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
 
@@ -100,8 +130,7 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
 
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
-2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
+1. [ChatGPT]([https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq](https://chatgpt.com/share/674497e0-e060-800a-bab8-659b5f9cd811)) 
 
 
 # **FP3 \- Final Project Check-in**
