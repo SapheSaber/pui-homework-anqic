@@ -254,12 +254,12 @@ body {
 }
 
 .remaining-label {
-    color: #e74c3c;
+    color: #C0392B;
     font-size: 14px;
 }
 
 .remaining-amount {
-    color: #e74c3c;
+    color: #C0392B;
     font-size: 18px;
     font-weight: bold;
 }
