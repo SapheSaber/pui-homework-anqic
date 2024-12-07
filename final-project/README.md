@@ -54,7 +54,7 @@ The website is designed to be fully responsive, ensuring a seamless user experie
 
 Tested Screen Sizes:
 - Desktop (Large Screens): 1920px and above for all pages
-- Tablet (Medium Screens): 1024px to 1366px (e.g., iPad Pro in landscape mode) for all pages
+- Tablet (Medium Screens): 1024px to 1366px (e.g., iPad Pro) for all pages
 
 ## Part 2: User Interaction
 
