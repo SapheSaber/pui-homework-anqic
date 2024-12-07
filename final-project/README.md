@@ -18,90 +18,170 @@ The website conveys personal financial information such as:
 ### How is it interesting and engaging?
 The website integrates dynamic data visualizations powered by charts, an accessible and responsive design, and interactive features like editable savings goals, adding new records for saving and spending, learning section to watch videos. These elements engage users and make financial management easy and enjoyable.
 
+### Accessibility Compliance
+To ensure that my website is accessible, I used the WAVE tool to check for errors and compliance with WCAG standards. Below are the results for each page:
+
+#### 1. Dashboard Page
+**Summary Screenshot**:  
+![Dashboard Summary](path/to/summary-screenshot-dashboard.png)  
+
+**Details Screenshot**:  
+![Dashboard Details](path/to/details-screenshot-dashboard.png)
+
+#### 2. Record Page
+**Summary Screenshot**:  
+![Record Page Summary](path/to/summary-screenshot-record.png)
+
+**Details Screenshot**:  
+![Record Page Details](path/to/details-screenshot-record.png)
+
+#### 3. Add Record Page
+**Summary Screenshot**:  
+![Add Record Page Summary](path/to/summary-screenshot-add-record.png)
+
+**Details Screenshot**:  
+![Add Record Page Details](path/to/details-screenshot-add-record.png)
+
+#### 3. Learning Page
+**Summary Screenshot**:  
+![Add Record Page Summary](path/to/summary-screenshot-add-record.png)
+
+**Details Screenshot**:  
+![Add Record Page Details](path/to/details-screenshot-add-record.png)
+
+### Responsiveness of the Website
+The website is designed to be fully responsive, ensuring a seamless user experience across multiple distinct screen sizes. 
+Tested Screen Sizes:
+Desktop (Large Screens): 1920px and above
+- all pages
+
+Full layout with sidebars, charts, and content displayed side-by-side.
+- all pages
+
+
 ## Part 2: User Interaction
 
-How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
+How a user would interact with your website? 
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+### View Spending Chart:
+Interaction Type: Click the year dropdown in the “Spending” section to filter data.
+How to Reproduce: Click the dropdown on the Spending card and select a year.
+
+### View Savings Progress:
+Interaction Type: Modify the savings goal using the edit icon.
+How to Reproduce: Click the pencil icon in the Savings card, input a new goal, and press Enter on keyboard or click outside the input field.
+
+### Switch Timeframes:
+Interaction Type: Click buttons to switch between “This Week,” “This Month,” and “This Year” for the savings timeline.
+How to Reproduce: Click the respective buttons above the savings line chart to see different timeline of saving.
+
+### Add Records:
+Interaction Type: Fill out the form to log a new spending or saving record from the "Add a Record" section.
+How to Reproduce: Navigate to the "Add Record" page, fill out the form, and submit.
+
+### View Records:
+Interaction Type: Go to the Records page to see the added records, and click on the two arrows to view the added records from different months of this year.
+How to Reproduce: Navigate to the "View Records" page.
+
+### Watch Videos:
+Interaction Type: click on the video play icon to play the specific video, and using the arrow for each section to expand and collapse the content.
+How to Reproduce: Navigate to the "Learning" page.
 
 ## Part 3: External Tool
 
-Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
+### 1. Tool 1: Chart.js
+- Why did you choose it?
+  Chart.js offers a simple, responsive, and customizable way to implement data visualizations. It is lightweight and suitable for creating interactive pie and line charts.
+- How you used it?
+  Chart.js was used to render the pie chart for spending categories, donut chart for saving goal, and the line chart for the savings timeline.
+- What does it add to your website?
+  It enhances the website by providing users with clear, interactive, and aesthetically pleasing data visualizations.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+### 2. Tool 2: Font Awesome
+- Why did you choose it?
+  Font Awesome provides a comprehensive library of icons for the webite, which is easy to implement and highly customizable.
+- How do you use it?
+Used for navigation icons (e.g., Dashboard, Add Record) and UI elements like the savings goal edit icon.
+- What does it add to your website?
+  It improves visual clarity and makes the interface more intuitive.
 
 ## Part 4: Design Iteration
 
-Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
+Initially, the prototype was basic and lacked responsiveness. So during the development, I added responsive layouts for iPad Pro screen sizes to ensure usability across devices. Then, I replaced text buttons with icons for the navigation bar to enhance usability. I also use the tool WAVE to evaluate if my website meets the standard accessibility requirement. I noticed the errors like the lack of labels and headers for my page based on the evaluation from WAVE. I then fixed these issues. I improved contrast and accessibility by refining color choices and ensuring all images/icons had proper alt text.
 
 ## Part 5: Implementation Challenge
 
-What challenges did you experience in implementing your website? (2-4 sentences max)
+Adjusting Styling to Meet WAVE Accessibility Standards: Ensuring accessibility compliance required adjustments to the color palette for sufficient contrast and the addition of headers and alt-text, making the process meticulous and tedious.
+
+Implementing JavaScript Features for Listing and Filtering Dates: Building dynamic filtering for report cards involved handling date objects, addressing edge cases, and debugging complex logic, which was essential but challenging to implement accurately.
 
 ## Part 6: Generative AI Use and Reflection
 
-Describe how you used Generative AI tools to create this final project (fill in the following information, write \~500 words in total).
-
-Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
+### Tools Used:
+Used extensively for coding assistance, debugging JavaScript logic, and understanding complex implementations like date-based filtering and chart updates.
 
 ### Usage Experiences by Project Aspects
 
-Feel free to edit the column \_ (other?) or add more columns if there's any other aspect in your project you've used the GenAI tools for.
-
 For the following aspects of your project, edit the corresponding table cell to answer:
-- *Usage*: Whether you used / did not use this tool for the aspect. Enter [Yes/No]
+- *Usage*: Whether you used/did not use this tool for the aspect. Enter [Yes/No]
 - *Productivity*: Give a rating on whether this tool makes your productivity for X aspect [1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved].
 
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
-| Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| Tool1 | Usage | No | No | Yes | Yes | No |
+| Tool1 | Productivity | 1 | 1 | 6 | 5 | 1 |
 
 
 ### Usage Reflection
 
 > Impact on your design and plan 
-* It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
-  2. Tool2:
+- **It matched my expectations and plan in FP2 in that**:
+  - **ChatGPT**: Provided effective JavaScript filtering methods(functions) for “This Week,” “This Month,” and “This Year,” aligning with my plan to implement chart filters and organize records by month. 
+  - **ChatGPT**: Met expectations for debugging by interpreting console errors and suggesting solutions, such as checking element existence before invoking methods, the chart not displaying correct data etc.
+
+- **It did not match my expectations and plan in FP2 in that**:
+  - **ChatGPT**: the overall website design, styling, and layout of the components. 
+
+- **GenAI tool did influence my final design and implementation plan because**:
+  - **ChatGPT**: Streamlined the development of date-based filtering and debugging, shaping my approach and reducing development time. 
+  - **ChatGPT**: Helped identify and resolve DOM-related and asynchronous code issues.
 
 > Use patterns
-* I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
-* I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
+* I accepted the generations when:
+  1. ChatGPT: This tool once suggested adding a check for whether the HTML elements exist before accessing their IDs or calling related functions. For example, when my console.log showed errors due to calling functions on null elements (because the user wasn’t on the record page yet), ChatGPT recommended using the document.addEventListener('DOMContentLoaded', function () { ... }) method or a conditional check like if (document.getElementById('recordPageElement')) { ... }. I adjusted my code to include this suggestion because it helped prevent runtime errors and improved the app's stability.
 
+  2. ChatGPT: Provided clear examples of how to refactor stored dates (e.g., "11-12-2024") to align with specific time-based filters like “This Week” or “This Month.” For instance, it suggested using JavaScript’s Date object methods, such as setDate and getDay, to calculate the start and end dates for the week dynamically. I accepted this approach because it streamlined my date filtering logic, allowing the chart’s data to adapt seamlessly to the user’s selected time frame.
+    
+* I critiqued/evaluated the generated suggestions by … For example, 
+  1. ChatGPT: Once suggested an overly simplistic approach to handling date filtering for charts, which assumed all records would neatly fall into distinct timeframes without overlapping. While this worked for straightforward cases, it didn’t handle edge cases like records spanning two months or weeks. I modified the suggested logic by adding additional checks to account for these scenarios, ensuring accurate filtering for complex datasets.
+  
+  2. ChatGPT: Suggested using specific methods for manipulating dates, like directly parsing strings using Date.parse(). While the approach worked initially, I noticed inconsistencies with certain date formats in my JSON data. I rejected the suggestion and replaced it with a safer alternative using new Date() with a custom parsing function to ensure consistent handling of all date formats across the app.
 
 > Pros and cons of using GenAI tools
-* Pros
-  1. Tool1: 
-  2. Tool2:
-* Cons
-  1. Tool1: 
-  2. Tool2:
+* Pros:
+
+1. ChatGPT: Accelerated debugging by helping me understand console errors and resolve them faster.
+2. ChatGPT: Simplified the implementation of advanced features like filtering and dynamic chart updates.
+3. ChatGPT: Enhanced my understanding of JavaScript libraries and methods, acting as a tutor outside the classroom.
+* Cons:
+
+1. ChatGPT: Generated code often required adjustments to match my specific project needs, demanding additional effort to refine and integrate.
+2. ChatGPT: Couldn’t provide end-to-end solutions, requiring manual coding and design decisions for seamless integration.
 
 
 ### Usage Log
 
-Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
+Prompts:
 
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
-2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
+Prompt: How can I ensure my dashboard charts update correctly after a new record is added?
+
+Prompt: How do I listen for changes in localStorage to update the chart dynamically?
+
+Prompt: I  realize that if I let's say add a new record to the existing card, but the Dashboard chart is not updating this feature: for example, I recorded Nov 14th spending -10 for food. Then later I recorded another one on Nov 14th clothing -33 but the dashboard is not displaying this feature. I think maybe the function forgot to load all the data from the localStorage ? or maybe a way to detect changes made to the exiting card
+
+Prompt: I want to implement a feature that fetches the current date. Then it filters the data based on the data that aligns with the current week of the current date, and the same for the month: so if my current date is Nov 20 then I filter the week of only displaying those data aligned with that week where Nov 20 is and also filter the month with current month Nov.
+
+1. [ChatGPT]([https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq](https://chatgpt.com/share/674497e0-e060-800a-bab8-659b5f9cd811)) 
 
 
 # **FP3 \- Final Project Check-in**
