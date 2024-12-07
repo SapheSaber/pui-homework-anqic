@@ -9,33 +9,34 @@
     <script src="https://kit.fontawesome.com/bc65c4255d.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="js/chart.js"></script>
-
 </head>
 <body>
+    <header>
+        <h1>Personal Finance Dashboard</h1>
+    </header>
     <div class="sidebar">
         <div class="profile">
-            <div class="avatar"></div>
+            <div class="avatar" aria-hidden="true"></div>
             <p>Anqi Chen</p>
         </div>
         <nav class="nav" role="navigation" aria-label="Main Navigation">
-            <a href="#" class="nav-item active">
-                <i class="fa-solid fa-chart-line" aria-hidden="true"></i> 
+            <a href="#" class="nav-item active" aria-current="page">
+                <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                 <span class="visually-hidden">Go to Dashboard</span> Dashboard
             </a>
             <a href="record.html" class="nav-item">
-                <i class="fa-regular fa-calendar" aria-hidden="true"></i> 
+                <i class="fa-regular fa-calendar" aria-hidden="true"></i>
                 <span class="visually-hidden">View your records</span> View Records
             </a>
-            <a href="add_record.html" class="nav-item" aria-current="page">
-                <i class="fa-solid fa-pen" aria-hidden="true"></i> 
+            <a href="add_record.html" class="nav-item">
+                <i class="fa-solid fa-pen" aria-hidden="true"></i>
                 <span class="visually-hidden">Add a new record</span> Add Record
             </a>
             <a href="learning.html" class="nav-item">
-                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> 
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
                 <span class="visually-hidden">Learn financial concepts</span> Learning
             </a>
         </nav>
-        
     </div>
     
     <div class="content">
@@ -45,20 +46,20 @@
                     <div class="spending-header">
                         <h2>Spending</h2>
                         <div class="year-filter-container">
-                            <select id="year-filter">
-                                <!-- post the availble year from the localStorage -->
+                            <label for="year-filter" class="visually-hidden">Filter spending by year</label>
+                            <select id="year-filter" title="Filter spending by year">
+                                <!-- Populate available years from localStorage -->
                             </select>
                         </div>
                     </div>
                     
                     <div class="spending-info">
                         <div class="spending-chart">
-                            <!-- pie chart -->
-                            <canvas id="spendingChart"></canvas>
+                            <canvas id="spendingChart" aria-label="Spending Chart" role="img"></canvas>
                         </div>
                         <div class="chart-legend">
                             <p>Total: $<span id="total-spending">0</span></p>
-                            <ul id="category-list"></ul>
+                            <ul id="category-list" aria-label="Spending Categories"></ul>
                         </div>
                     </div>
                 </div>
@@ -68,20 +69,21 @@
                         <div>
                             <p>Saving goal</p>
                             <div class="editable-goal">
-
                                 <h3 id="savingsGoalDisplay">1</h3>
-                                <label for="savingsGoalInput" id="savingsGoalLabel"></label>
+                                <label for="savingsGoalInput">Enter your savings goal</label>
                                 <input 
                                     type="number" 
                                     id="savingsGoalInput" 
                                     name="savingsGoalInput" 
                                     min="1" 
-                                    aria-labelledby="savingsGoalLabel" 
                                     aria-required="true" 
                                     title="Enter your savings goal, must be a positive number" 
                                     placeholder="Enter your savings goal"
                                 />
-                                <i class="fa fa-pencil" id="editGoalIcon" onclick="editGoal()"></i>
+                                <button id="editGoalIcon" onclick="editGoal()" title="Edit Savings Goal">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <span class="visually-hidden">Edit Savings Goal</span>
+                                </button>
                             </div>
                         </div>
                         <div>
@@ -91,15 +93,13 @@
                     </div>
 
                     <div class="saving-chart">
-                        <canvas id="savingsProgressChart"></canvas>
+                        <canvas id="savingsProgressChart" aria-label="Savings Progress Chart" role="img"></canvas>
                         <div class="savings-percentage">
-                            <!-- default value 0 -->
                             <h2 id="savingsPercentage">0</h2> 
                             <p id="totalSavedDisplay">Total Saved: 0</p>
                         </div>
                     </div>
                 </div>
-                
             </div>
 
             <div class="saving-chart-section">
@@ -109,18 +109,16 @@
                         <p>Total: $<span id="total-saving">100</span></p>
                     </div>
                     <div class="chart-controls">
-                        <button id="week-btn">This Week</button>
-                        <button id="month-btn" >This Month</button>
-                        <button id="year-btn" class="active">This Year</button>
+                        <button id="week-btn" aria-label="Show savings for this week">This Week</button>
+                        <button id="month-btn" aria-label="Show savings for this month">This Month</button>
+                        <button id="year-btn" class="active" aria-label="Show savings for this year">This Year</button>
                     </div>
                 </div>
                 
                 <div class="saving-line-chart">
-                    <canvas id="savingChart"></canvas>
+                    <canvas id="savingChart" aria-label="Saving Timeline Chart" role="img"></canvas>
                 </div>
-                
             </div>
-            
         </section>
     </div>
 </body>
