@@ -18,6 +18,47 @@ The website conveys personal financial information such as:
 ### How is it interesting and engaging?
 The website integrates dynamic data visualizations powered by charts, an accessible and responsive design, and interactive features like editable savings goals, adding new records for saving and spending, learning section to watch videos. These elements engage users and make financial management easy and enjoyable.
 
+### Accessibility Compliance
+To ensure that my website is accessible, I used the WAVE tool to check for errors and compliance with WCAG standards. Below are the results for each page:
+
+#### 1. Dashboard Page
+**Summary Screenshot**:  
+![Dashboard Summary](path/to/summary-screenshot-dashboard.png)  
+
+**Details Screenshot**:  
+![Dashboard Details](path/to/details-screenshot-dashboard.png)
+
+#### 2. Record Page
+**Summary Screenshot**:  
+![Record Page Summary](path/to/summary-screenshot-record.png)
+
+**Details Screenshot**:  
+![Record Page Details](path/to/details-screenshot-record.png)
+
+#### 3. Add Record Page
+**Summary Screenshot**:  
+![Add Record Page Summary](path/to/summary-screenshot-add-record.png)
+
+**Details Screenshot**:  
+![Add Record Page Details](path/to/details-screenshot-add-record.png)
+
+#### 3. Learning Page
+**Summary Screenshot**:  
+![Add Record Page Summary](path/to/summary-screenshot-add-record.png)
+
+**Details Screenshot**:  
+![Add Record Page Details](path/to/details-screenshot-add-record.png)
+
+### Responsiveness of the Website
+The website is designed to be fully responsive, ensuring a seamless user experience across multiple distinct screen sizes. 
+Tested Screen Sizes:
+Desktop (Large Screens): 1920px and above
+- all pages
+
+Full layout with sidebars, charts, and content displayed side-by-side.
+- all pages
+
+
 ## Part 2: User Interaction
 
 How a user would interact with your website? 
@@ -87,8 +128,8 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | No | No | No | Yes | Yes |
-| Tool1 | Productivity | 1 | 1 | 1 | 5 | 6 |
+| Tool1 | Usage | No | No | Yes | Yes | No |
+| Tool1 | Productivity | 1 | 1 | 6 | 5 | 1 |
 
 
 ### Usage Reflection
