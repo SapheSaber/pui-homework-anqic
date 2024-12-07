@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 netWorthColor = '#145b17';
             } else if (netWorth < 0) {
                 card.classList.add('red-border');
-                netWorthColor = '#e74c3c';
+                netWorthColor = '#C0392B';
             } else {
                 card.classList.add('gray-border');
             }
