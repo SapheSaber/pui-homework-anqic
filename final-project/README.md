@@ -70,65 +70,75 @@ Initially, the prototype was basic and lacked responsiveness. So during the deve
 
 ## Part 5: Implementation Challenge
 
-What challenges did you experience in implementing your website? (2-4 sentences max)
+Adjusting Styling to Meet WAVE Accessibility Standards: Ensuring accessibility compliance required adjustments to the color palette for sufficient contrast and the addition of headers and alt-text, making the process meticulous and tedious.
+
+Implementing JavaScript Features for Listing and Filtering Dates: Building dynamic filtering for report cards involved handling date objects, addressing edge cases, and debugging complex logic, which was essential but challenging to implement accurately.
 
 ## Part 6: Generative AI Use and Reflection
 
 ### Tools Used:
-ChatGPT: Used for coding assistance, debugging JavaScript logic.
-
-Document your use of all GenAI tools — ChatGPT, Copilot, Claude, Cursor, etc. using the template below. Add/Delete rows or bullet points if needed, and replace Tool1/Tool2 with the name of the tool.
+Used extensively for coding assistance, debugging JavaScript logic, and understanding complex implementations like date-based filtering and chart updates.
 
 ### Usage Experiences by Project Aspects
 
-Feel free to edit the column \_ (other?) or add more columns if there's any other aspect in your project you've used the GenAI tools for.
-
 For the following aspects of your project, edit the corresponding table cell to answer:
-- *Usage*: Whether you used / did not use this tool for the aspect. Enter [Yes/No]
+- *Usage*: Whether you used/did not use this tool for the aspect. Enter [Yes/No]
 - *Productivity*: Give a rating on whether this tool makes your productivity for X aspect [1-Much Reduced, 2-Reduced, 3-Slightly Reduced, 4-Not Reduced nor Improved, 5-Slightly Improved, 6-Improved, 7-Much Improved].
 
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
-| Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| Tool1 | Usage | No | No | No | Yes | Yes |
+| Tool1 | Productivity | 1 | 1 | 1 | 5 | 6 |
 
 
 ### Usage Reflection
 
 > Impact on your design and plan 
-* It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
-* GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
-  2. Tool2:
+- **It matched my expectations and plan in FP2 in that**:
+  - **ChatGPT**: Provided effective JavaScript filtering methods(functions) for “This Week,” “This Month,” and “This Year,” aligning with my plan to implement chart filters and organize records by month. 
+  - **ChatGPT**: Met expectations for debugging by interpreting console errors and suggesting solutions, such as checking element existence before invoking methods, the chart not displaying correct data etc.
+
+- **It did not match my expectations and plan in FP2 in that**:
+  - **ChatGPT**: the overall website design, styling, and layout of the components. 
+
+- **GenAI tool did influence my final design and implementation plan because**:
+  - **ChatGPT**: Streamlined the development of date-based filtering and debugging, shaping my approach and reducing development time. 
+  - **ChatGPT**: Helped identify and resolve DOM-related and asynchronous code issues.
 
 > Use patterns
-* I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
-* I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
+* I accepted the generations when:
+  1. ChatGPT: This tool once suggested adding a check for whether the HTML elements exist before accessing their IDs or calling related functions. For example, when my console.log showed errors due to calling functions on null elements (because the user wasn’t on the record page yet), ChatGPT recommended using the document.addEventListener('DOMContentLoaded', function () { ... }) method or a conditional check like if (document.getElementById('recordPageElement')) { ... }. I adjusted my code to include this suggestion because it helped prevent runtime errors and improved the app's stability.
 
+  2. ChatGPT: Provided clear examples of how to refactor stored dates (e.g., "11-12-2024") to align with specific time-based filters like “This Week” or “This Month.” For instance, it suggested using JavaScript’s Date object methods, such as setDate and getDay, to calculate the start and end dates for the week dynamically. I accepted this approach because it streamlined my date filtering logic, allowing the chart’s data to adapt seamlessly to the user’s selected time frame.
+    
+* I critiqued/evaluated the generated suggestions by … For example, 
+  1. ChatGPT: Once suggested an overly simplistic approach to handling date filtering for charts, which assumed all records would neatly fall into distinct timeframes without overlapping. While this worked for straightforward cases, it didn’t handle edge cases like records spanning two months or weeks. I modified the suggested logic by adding additional checks to account for these scenarios, ensuring accurate filtering for complex datasets.
+  
+  2. ChatGPT: Suggested using specific methods for manipulating dates, like directly parsing strings using Date.parse(). While the approach worked initially, I noticed inconsistencies with certain date formats in my JSON data. I rejected the suggestion and replaced it with a safer alternative using new Date() with a custom parsing function to ensure consistent handling of all date formats across the app.
 
 > Pros and cons of using GenAI tools
-* Pros
-  1. Tool1: 
-  2. Tool2:
-* Cons
-  1. Tool1: 
-  2. Tool2:
+* Pros:
+
+1. ChatGPT: Accelerated debugging by helping me understand console errors and resolve them faster.
+2. ChatGPT: Simplified the implementation of advanced features like filtering and dynamic chart updates.
+3. ChatGPT: Enhanced my understanding of JavaScript libraries and methods, acting as a tutor outside the classroom.
+* Cons:
+
+1. ChatGPT: Generated code often required adjustments to match my specific project needs, demanding additional effort to refine and integrate.
+2. ChatGPT: Couldn’t provide end-to-end solutions, requiring manual coding and design decisions for seamless integration.
 
 
 ### Usage Log
 
-Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
+Prompts:
+
+Prompt: How can I ensure my dashboard charts update correctly after a new record is added?
+
+Prompt: How do I listen for changes in localStorage to update the chart dynamically?
+
+Prompt: I  realize that if I let's say add a new record to the existing card, but the Dashboard chart is not updating this feature: for example, I recorded Nov 14th spending -10 for food. Then later I recorded another one on Nov 14th clothing -33 but the dashboard is not displaying this feature. I think maybe the function forgot to load all the data from the localStorage ? or maybe a way to detect changes made to the exiting card
+
+Prompt: I want to implement a feature that fetches the current date. Then it filters the data based on the data that aligns with the current week of the current date, and the same for the month: so if my current date is Nov 20 then I filter the week of only displaying those data aligned with that week where Nov 20 is and also filter the month with current month Nov.
 
 1. [ChatGPT]([https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq](https://chatgpt.com/share/674497e0-e060-800a-bab8-659b5f9cd811)) 
 
