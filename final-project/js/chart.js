@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const labels = Object.keys(categories);
         const data = Object.values(categories);
-        const colors = ['#4A3AFF', '#70A8FD', '#AF64FB', '#0ED2B8', '#FF60A0']; 
+        const colors = ['#0033A0', '#0055D4', '#7400B8', '#00796B', '#D81159']; 
 
         totalSpendingElement.textContent = totalSpending.toFixed(2);
 

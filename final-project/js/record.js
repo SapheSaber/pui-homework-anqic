@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             if (netWorth > 0) {
                 card.classList.add('green-border');
-                netWorthColor = '#328A35';
+                netWorthColor = '#145b17';
             } else if (netWorth < 0) {
                 card.classList.add('red-border');
                 netWorthColor = '#e74c3c';
