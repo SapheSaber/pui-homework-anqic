@@ -23,41 +23,38 @@ To ensure that my website is accessible, I used the WAVE tool to check for error
 
 #### 1. Dashboard Page
 **Summary Screenshot**:  
-![Dashboard Summary](path/to/summary-screenshot-dashboard.png)  
+![Dashboard Summary](imgs/home.png)  
 
 **Details Screenshot**:  
-![Dashboard Details](path/to/details-screenshot-dashboard.png)
+![Dashboard Details](imgs/home2.png)
 
 #### 2. Record Page
 **Summary Screenshot**:  
-![Record Page Summary](path/to/summary-screenshot-record.png)
+![Record Page Summary](imgs/viewRecordPage1.png)
 
 **Details Screenshot**:  
-![Record Page Details](path/to/details-screenshot-record.png)
+![Record Page Details](imgs/viewRecordPage2.png)
 
 #### 3. Add Record Page
 **Summary Screenshot**:  
-![Add Record Page Summary](path/to/summary-screenshot-add-record.png)
+![Add Record Page Summary](imgs/recordPage1.png)
 
 **Details Screenshot**:  
-![Add Record Page Details](path/to/details-screenshot-add-record.png)
+![Add Record Page Details](imgs/recordPage2.png)
 
 #### 3. Learning Page
 **Summary Screenshot**:  
-![Add Record Page Summary](path/to/summary-screenshot-add-record.png)
+![Add Record Page Summary](imgs/learningPage1.png)
 
 **Details Screenshot**:  
-![Add Record Page Details](path/to/details-screenshot-add-record.png)
+![Add Record Page Details](imgs/learningPage2.png)
 
 ### Responsiveness of the Website
 The website is designed to be fully responsive, ensuring a seamless user experience across multiple distinct screen sizes. 
+
 Tested Screen Sizes:
-Desktop (Large Screens): 1920px and above
-- all pages
-
-Full layout with sidebars, charts, and content displayed side-by-side.
-- all pages
-
+- Desktop (Large Screens): 1920px and above for all pages
+- Tablet (Medium Screens): 1024px to 1366px (e.g., iPad Pro in landscape mode) for all pages
 
 ## Part 2: User Interaction
 
